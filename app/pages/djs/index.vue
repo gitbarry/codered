@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto w-full max-w-6xl">
+  <div class="px-4 mx-auto w-full max-w-6xl">
     <header class="mb-6 ">
       <PageTitle title="The DJs" />
       <p class="max-w-2xl text-lg text-zinc-600">
