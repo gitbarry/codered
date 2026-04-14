@@ -1,0 +1,23 @@
+/**
+ * Global colour tokens — use anywhere: `color: var(--color-brand);` or in Vue `style="background: var(--color-page)"`.
+ * Keep these aligned with `tailwind.config.ts` if you define the same hues in both places.
+ */
+:root {
+  --color-page: #ffffff;
+  --color-foreground: #18181b;
+  --color-muted: #52525b;
+  --color-brand: #990000;
+  --color-brand-muted: #991b1b;
+  --color-text-menu: #ffffff;
+  --color-text-menu-hover: #999999;
+  --color-text-menu-active: #cccccc;
+  --color-text-menu-active-hover: #ffffff;
+  --color-text-footer: #999999;
+  --color-text-footer-hover: #ffffff;
+  --color-background-section-odd: #f6f6f6;
+  --color-background-section-even: #ffffff;
+}
+
+main {
+  min-height: 60vh;
+}
