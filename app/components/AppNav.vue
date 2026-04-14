@@ -100,6 +100,7 @@ const nav = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/djs', label: 'The DJs' },
+  { to: '/news', label: 'News' },
   { to: '/contact', label: 'Contact' },
   { to: '/foreverdays', label: 'Foreverdays' }
 ] as const
