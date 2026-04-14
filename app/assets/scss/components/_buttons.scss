@@ -1,0 +1,19 @@
+.button {
+    background-color: var(--color-brand);
+    color: white;
+    padding: 1rem .5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: var(--color-brand-muted);
+    }
+    &.small {
+        font-size: .85rem;
+        padding: .5rem 1rem;
+    }
+}

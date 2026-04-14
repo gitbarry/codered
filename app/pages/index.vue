@@ -24,22 +24,4 @@ const nextEventParagraphs = [
   "We're a community-driven event that celebrates the best in Drum & Bass music.",
 ];
 
-const cards = [
-  { to: "/about", title: "About", blurb: "Who we are and what this is for." },
-  {
-    to: "/djs",
-    title: "The DJs",
-    blurb: "Residents and guests — profiles and bios.",
-  },
-  {
-    to: "/contact",
-    title: "Contact",
-    blurb: "Reach out — form is static for now.",
-  },
-  {
-    to: "/foreverdays",
-    title: "Foreverdays",
-    blurb: "Charity initiative and donations via JustGiving.",
-  },
-];
 </script>

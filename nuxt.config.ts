@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  css: ['~/assets/css/design-tokens.css'],
+  css: ['~/assets/css/design-tokens.css', '~/assets/scss/global.scss'],
   modules: ['@nuxtjs/tailwindcss', '@storyblok/nuxt'],
   storyblok: {
     accessToken: process.env.STORYBLOK_ACCESS_TOKEN,

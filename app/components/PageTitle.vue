@@ -18,5 +18,6 @@ withDefaults(
 h1 {
   font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 </style>
