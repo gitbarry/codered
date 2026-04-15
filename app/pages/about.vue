@@ -1,7 +1,12 @@
 <template>
-  <div class="px-4 mx-auto w-full max-w-6xl">
+  <SubHero
+    title="About CODE RED"
+    subtitle="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio."
+    background-image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&q=80"
+  />
+  <div class="mx-auto w-full max-w-6xl flex-1 px-4 py-10 sm:px-6 lg:px-8">
   <article>
-    <PageTitle title="About CODE RED" />
+    <PageTitle title="Who are CODE RED?" />
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>
       <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
       </p>

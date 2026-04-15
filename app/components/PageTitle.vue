@@ -21,5 +21,19 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  border-bottom: 10px solid var(--color-brand);
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: '';
+    display: flex;
+    width: 50%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+  }
 }
 </style>

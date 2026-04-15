@@ -1,7 +1,12 @@
 <template>
+  <SubHero
+    title="Meet the Team"
+    subtitle="Meet the resident DJ's behind Code Red."
+    background-image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&q=80"
+  />
   <div class="px-4 mx-auto w-full max-w-6xl">
     <header class="mb-6 ">
-      <PageTitle title="The DJs" />
+      <PageTitle title="The CODE RED resident DJs" />
       <p class="max-w-2xl text-lg text-zinc-600">
         Meet the resident DJ's behind Code Red.
       </p>
@@ -18,9 +23,13 @@
     <ul v-else class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" role="list">
       <li v-for="player in djsList" :key="player.slug">
         <article
-          class="group flex h-full flex-col overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 transition hover:border-red-400/60 hover:bg-white hover:shadow-md"
+          class="cd-card group flex h-full flex-col overflow-hidden rounded-xl transition hover:border-red-400/60 hover:bg-white hover:shadow-md"
         >
-          <div class="aspect-[4/3] overflow-hidden bg-zinc-200">
+          <NuxtLink
+            :to="`/djs/${player.slug}`"
+            :aria-label="`View full profile: ${player.title}`"
+            class="block aspect-[4/3] overflow-hidden bg-zinc-200 outline-none ring-offset-2 focus-visible:ring-2 focus-visible:ring-red-500"
+          >
             <img
               :src="player.image"
               :alt="player.title"
@@ -29,7 +38,7 @@
               height="600"
               loading="lazy"
             />
-          </div>
+          </NuxtLink>
           <div class="flex flex-1 flex-col p-5">
             <h2 class="text-xl font-semibold text-zinc-900 group-hover:text-red-600">
               {{ player.title }}
@@ -53,7 +62,7 @@
 <script setup lang="ts">
 import type { ISbStoryData } from '@storyblok/js'
 
-useHead({ title: 'The DJs' })
+useHead({ title: 'The CODE RED resident DJs' })
 
 type Dj = {
   slug: string
@@ -128,5 +137,10 @@ const djsList = computed(() => displayPlayers.value ?? [])
 <style scoped lang="postcss">
 .tagline {
   color: var(--color-brand);
+}
+
+.cd-card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+border-bottom: 5px solid #e0dddd;
 }
 </style>

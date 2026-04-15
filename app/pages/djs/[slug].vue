@@ -1,11 +1,6 @@
 <template>
-  <div class="py-10 px-4 mx-auto w-full max-w-6xl">
-    <NuxtLink
-      to="/djs"
-      class="inline-flex items-center gap-2 text-sm font-medium text-zinc-500 transition hover:text-zinc-900"
-    >
-      ← The DJs
-    </NuxtLink>
+  <div class="py-10 px-6 mx-auto w-full max-w-6xl">
+    
 
     <p v-if="pending" class="mt-6 text-sm text-zinc-500">Loading DJ profile...</p>
     <p v-else-if="error" class="mt-6 text-sm text-red-600">
@@ -23,19 +18,22 @@
         />
       </div>
       <div class="space-y-6 md:col-span-8">
-        <header>
-          <p class="tagline text-sm font-medium uppercase tracking-widest text-red-600">
-            DJ
-          </p>
+        
           <PageTitle :title="player.title" />
-        </header>
         <div class="space-y-4 text-zinc-700">
           <p v-for="(para, i) in bioParagraphs" :key="i" class="leading-relaxed">
             {{ para }}
           </p>
           <SoundCloudEmbed v-if="player.soundcloud" :url="player.soundcloud" :color="'#990000'" />
+          <NuxtLink
+      to="/djs"
+      class="inline-flex items-center gap-2 text-sm font-medium text-zinc-500 transition hover:text-zinc-900"
+    >
+      ← The DJs
+    </NuxtLink>
         </div>
       </div>
+      
     </article>
   </div>
 </template>

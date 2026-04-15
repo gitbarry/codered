@@ -2,8 +2,15 @@
   <div class="page-wrapper">
     <AppHeader />
     <main class="site-main">
-      
-        <slot />
+        <div class="grid gap-8 lg:grid-cols-[1fr_16rem] lg:items-start">
+            <div class="min-w-0">
+                <slot />
+            </div>
+        
+        <div class="min-w-0">
+            <slot name="sidebar" />
+        </div>
+    </div>
     </main>
     <AppFooter />
   </div>

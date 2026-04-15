@@ -81,3 +81,6 @@ This project uses `@storyblok/nuxt`.
 1. Create a Storyblok space and copy its Preview API token.
 2. Set `STORYBLOK_ACCESS_TOKEN` in `.env`.
 3. Restart the dev server after changing environment variables.
+
+## Start proxy:
+local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem
