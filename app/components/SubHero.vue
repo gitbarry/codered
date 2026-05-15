@@ -13,7 +13,7 @@
       fetchpriority="high"
     />
     <div
-      class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/35"
+      class="absolute"
       aria-hidden="true"
     />
     <div
@@ -51,7 +51,10 @@ const titleId = useId()
 
 <style scoped lang="postcss">
 .sub-hero {
-  border-bottom: 10px solid var(--color-brand);
+  border-bottom: 10px solid black;
+  @media (min-width: 768px) {
+    padding-top: 4rem;
+  }
   h1 {
     font-size: 2.5rem;
   }

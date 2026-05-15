@@ -13,7 +13,7 @@
       fetchpriority="high"
     />
     <div
-      class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/35"
+      class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-zinc-950/25"
       aria-hidden="true"
     />
     <div class="relative z-10 mx-auto w-full max-w-6xl px-6 py-8 sm:px-10 sm:py-14 lg:py-20">
@@ -49,6 +49,9 @@ const titleId = useId()
 
 <style scoped lang="postcss">
 .hero {
-  border-bottom: 10px solid var(--color-brand);
+  border-bottom: 10px solid black;
+  @media (min-width: 768px) {
+    padding-top: 4rem;
+  }
 }
 </style>

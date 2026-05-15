@@ -1,4 +1,9 @@
 <template>
+  <SubHero
+    title="News"
+    subtitle="Latest updates from Code Red."
+    background-image="/images/cr-hero.webp"
+  />
   <div class="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
     <header class="mb-6 space-y-3">
       <PageTitle title="News" />

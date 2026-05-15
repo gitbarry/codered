@@ -14,7 +14,7 @@
 useHead({ title: "Home" });
 
 const heroImage =
-  "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&q=80";
+  "/images/hero7.png";
 
 const nextEventTitle = "Next Event";
 

@@ -2,7 +2,7 @@
   <SubHero
     title="About CODE RED"
     subtitle="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio."
-    background-image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&q=80"
+    background-image="/images/cr-hero.webp"
   />
   <div class="mx-auto w-full max-w-6xl flex-1 px-4 py-10 sm:px-6 lg:px-8">
   <article>

@@ -151,6 +151,48 @@ onUnmounted(() => {
     color: var(--color-text-menu-active-hover);
   }
 }
+
+.main-menu {
+  background-color: black;
+  @media (min-width: 1024px) {
+    background-color: black;
+      padding: .5rem 1rem 1rem;
+      position: relative;
+      height: 4rem;
+    &::before {
+      content: '';
+      display: block;
+      width: 88px;
+      height: 4rem;
+      position: absolute;
+      bottom: 0;
+      left: -60px;
+      background-image: url('/images/nav-left.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 88px;
+      height: 4rem;
+      position: absolute;
+      bottom: 0;
+      right: -60px;
+      background-image: url('/images/nav-right.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .menu-item-active {
+      color: var(--color-text-menu-hover)
+    }
+    .menu-item::last-child {
+      display: none;
+    }
+  }
+}
 .menu-item {
   color: var(--color-text-menu);
   &:hover {
@@ -163,4 +205,6 @@ onUnmounted(() => {
     color: var(--color-text-menu-active-hover);
   }
 }
+
+
 </style>
